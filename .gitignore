@@ -1,0 +1,12 @@
+# .gitignore for WWDC19 Scholarship repo
+# Author: Marius Montebaur
+
+
+# Xcode Stuff
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# macOS folder display preferences
+*.DS_Store
+
