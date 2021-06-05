@@ -19,11 +19,11 @@ public class Theory2PageScene: SKScene {
         btn.position = CGPoint(x: size.width/2, y: size.height - 522 - 46/2)
         addChild(btn)
         
-        let text1 = "The formula below shows how to calculate these three terms.\nThe parameters Kp, Ki and Kd are scaling factors that are used to tune the controller. They determine how big the influence of a term is on the overall result. The next pages will explain the parameters in detail and demonstrate the influence of each of the three terms using interactive examples."
+        let text1 = "The formula below shows how to calculate these three terms.\nThe parameters Kp, Ki and Kd are scaling factors that are used to tune the controller. They determine how big the influence of a term is on the overall result. The next pages will explain these parameters in detail and demonstrate the influence of each of the three terms using interactive examples."
         let sectionLabel1 = PaperText(type: .TextSection, text: text1)
         addChild(sectionLabel1)
         
-        let text2 = "When a PID controller influences a car or robotic arm in the following examples, it does so by adjusting the parameters of the SKPhysicsWorld that controls the nodes behaviour rather than just changing the zRotation."
+        let text2 = "When a PID controller influences a car or robotic arm in the following examples, it does so by adjusting the parameters of the physics simulation rather than just changing the object's orientation."
         let sectionLabel2 = PaperText(type: .TextSection, text: text2)
         sectionLabel2.position.y = size.height - 404
         addChild(sectionLabel2)

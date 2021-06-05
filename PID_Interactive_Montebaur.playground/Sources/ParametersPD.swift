@@ -52,7 +52,7 @@ class ParametersPDPageScene: SKScene {
         subsTitle.position = CGPoint(x: size.width/2, y: size.height - 350)
         addChild(subsTitle)
         
-        let text = "The derivative term considers the rate of change in the error value. Thus it will prevent the output value from overshooting, as it lowers the rate of change when the output approaches the desired value."
+        let text = "The derivative term considers the rate of change in the error value. It prevents the output from overshooting by lowering the control value when the output approaches the desired value."
         let desc = PaperText(type: .TextSection, text: text)
         desc.position.y = size.height - 389
         addChild(desc)

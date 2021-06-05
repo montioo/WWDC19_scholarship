@@ -9,7 +9,7 @@
 import Foundation
 
 /* This class represents a PID controller.
-Of course the parameters Kp, Ki and Kd can be tuned to influence the controlers output. To add more realism to the behaviour, it is also possible to specify a maxChange value which limits the difference between two values outputed by the controller. This is useful, because a cars steering wheel can't just be rotated by 720 degree but needs some time.
+Of course the parameters Kp, Ki and Kd can be tuned to influence the controler's output. To add more realism to the behaviour, it is also possible to specify a maxChange value which limits the difference between two values outputed by the controller. This is useful, because a cars steering wheel can't just be rotated by 720 degree but needs some time.
  It's also possible to limit the absolute value the controler outputs because real systems can't provide unlimited force / torque / rotation / ....
  */
 class PIDController {

@@ -11,7 +11,7 @@
  different terms to compute the new output, i.e. the control signal.
  
  The examples use SpriteKit's Physics World to demonstrate the
- controllers reaction to gravity and other physical forces.
+ controller,s reaction to gravity and other physical forces.
  
  The whole playground is structured like a paper. There are
  multiple pages, starting with the cover page and the theoretical
@@ -19,7 +19,7 @@
  examples that utilise PID controllers to control some form of
  system with simulated physics. The parameters of the controller can
  be changed in realtime which results in an immediate change of the
- controllers output and thus the systems behaviour.
+ controller's output and thus the system's behaviour.
  
  The order of the pages is as follows:
  1. TitlePage.swift

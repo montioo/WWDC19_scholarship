@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-/* Displays the first page of theory with and image showing the structural components of a PID controller.
+/* Displays the first page of theory with an image showing the structural components of a PID controller.
  */
 public class Theory1PageScene: SKScene {
     
@@ -23,7 +23,7 @@ public class Theory1PageScene: SKScene {
         pidComp.position = CGPoint(x: size.width/2, y: size.height - 332 - pidComp.size.height/2)
         addChild(pidComp)
         
-        let text = "PID (proportional integral derivative) controllers influence real world machines so that a given state / position is maintained even in the event of interference.\n\nIts output depends not only on the desired value (e.g. a robotic arms angle), the so called setpoint s, but also on the current value c (e.g. the current angle). The difference between these two is called error e and is used in three different terms which are then added to calculate the output o."
+        let text = "PID (proportional integral derivative) controllers influence real world machines so that a given state / position is maintained even in the event of interference.\n\nIts output depends not only on the desired value (e.g. a robotic arm's angle), the so called setpoint s, but also on the current value c (e.g. the current angle). The difference between these two is called error e and is used in three different terms which are then added to calculate the output o."
         let sectionLabel = PaperText(type: .TextSection, text: text)
         addChild(sectionLabel)
         

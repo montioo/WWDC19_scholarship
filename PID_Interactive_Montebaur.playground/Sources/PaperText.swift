@@ -18,7 +18,7 @@ enum PaperTextType {
     case ImageDescription
 }
 
-/* Since the paper should only display a fixed amount of text styles, this class will handle the preferences of the different styles. It also handles the converson of certain text patterns to subscript to display the controllers parameters Kp, Ki and Kd correctly.
+/* Since the paper should only display a fixed amount of text styles, this class will handle the preferences of the different styles. It also handles the converson of certain text patterns to subscript to display the controller's parameters Kp, Ki and Kd correctly.
  */
 class PaperText: SKLabelNode {
     

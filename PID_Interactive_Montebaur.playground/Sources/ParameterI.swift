@@ -22,7 +22,7 @@ class ParameterIPageScene: SKScene {
         subsTitle.position = CGPoint(x: size.width/2, y: size.height - 100)
         addChild(subsTitle)
         
-        let text = "The integral term sums up previous errors. This helps to compensate constant influences like more weight pulling an robotic arm down."
+        let text = "The integral term sums up previous errors. This helps to compensate constant influences like more weight pulling a robotic arm down."
         let desc = PaperText(type: .TextSection, text: text)
         desc.position.y = size.height - 143
         addChild(desc)

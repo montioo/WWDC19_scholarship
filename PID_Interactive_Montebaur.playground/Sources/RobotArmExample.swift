@@ -9,8 +9,8 @@
 import SpriteKit
 
 /* This example shows a robotic arm which the user can tune and control.
-As the integral component of a PID controller is able to compensate a constant influence on the system, an example made to demonstrate this parameters purpose should also offer some form of constant influence.
- The robotic arm has a weight attatched to it which pulls the arm down. The force normally used to hold the arm in place is not enough to hold the arms position. The parameters Ki can compensate this behaviour.
+As the integral component of a PID controller is able to compensate a constant influence on the system, an example made to demonstrate this parameter's purpose should also offer some form of constant influence.
+ The robotic arm has a weight attatched to it which pulls the arm down. The force normally used to hold the arm in place is not enough to hold the arm's position. The parameter Ki can compensate this behaviour.
  The user can also change the mass of the weight that the arm carries, to make sure the chosen parameter Ki does not only work for one weight.
  */
 public class RobotArmExampleScene: SKScene {
@@ -158,7 +158,7 @@ public class RobotArmExampleScene: SKScene {
         addChild(PaperText(type: .SectionTitle, text: "Interactive Example II: Robotic Arm"))
         addChild(PaperText(type: .PageNumber, text: "Page 7"))
         
-        let descText = "The parameters of the controller for the left joint are already tuned. When changing the weight the arm has to lift, the torque used before to hold the arms position is not longer the right value. Try to increase the weight and see the arm lower. Then adjust the parameter Ki to be around 1.4 and see the arms movement compensates the weight. The green lines show the angle that each joint is supposed to hold."
+        let descText = "The parameters of the controller for the left joint are already tuned. When changing the weight the arm has to lift, the torque used before to hold the arm's position is no longer the right value. Try to increase the weight and see the arm lower. Then adjust the parameter Ki to be around 1.4 and see the arm's movement compensate the weight. The green lines show the angle that each joint is supposed to hold."
         let desc = PaperText(type: .TextSection, text: descText)
         desc.position.y = size.height - 387
         addChild(desc)
@@ -168,7 +168,7 @@ public class RobotArmExampleScene: SKScene {
         addChild(navBtn)
     }
     
-    // Updates the UI with the currently desired rotations of each joint and also updates the PID controllers outputs.
+    // Updates the UI with the currently desired rotations of each joint and also updates the PID controller's outputs.
     override public func update(_ currentTime: TimeInterval) {
         angleIndicator1.zRotation = joint1AngleSlider.currentValue
         angleIndicator2.zRotation = joint2AngleSlider.currentValue

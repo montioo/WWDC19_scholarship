@@ -10,8 +10,8 @@
 import SpriteKit
 
 /* This scene contains the first interactive example: Steering a car with a PID controller.
-The example has two stages. At first (stage 1), the controller only uses the parameter Kp to control the proportional part of the controllers calculations. This leads to the car overshooting the center of the road and oscillating around the road without following it precisely. The user has the option to tune the value of the parameter Kd but this alone will not improve the controllers performance much.
-With the push of a button, the user can return to the previous scene, where the derivative part of the PID controller with the parameter Kd is introduced. The user can now test the car example again (stage 2), but this time he can also tune the PID controllers parameter which influences the derivative part. Not the cars movement is much better, as it lowers the steering angle as it approaches the center of the road.
+The example has two stages. At first (stage 1), the controller only uses the parameter Kp to control the proportional part of the controller's calculations. This leads to the car overshooting the center of the road and oscillating around the road without following it precisely. The user has the option to tune the value of the parameter Kd but this alone will not improve the controller's performance much.
+With the push of a button, the user can return to the previous scene, where the derivative part of the PID controller with the parameter Kd is introduced. The user can now test the car example again (stage 2), but this time he can also tune the PID controller's parameter which influences the derivative part. Now the cars movement is much better, as it lowers the steering angle as it approaches the center of the road.
  */
 public class CarExampleScene: SKScene {
     
@@ -88,7 +88,7 @@ public class CarExampleScene: SKScene {
         sbKp.maxValue = 0.4; sbKp.minValue = 0; sbKp.currentValue = 0.08
         addChild(sbKp)
         
-        let descText = "This first example uses only the proportional part of the controller to compute the output, while the other two parameters are set to zero. As you can see, the car doesn't follow the line very precisely. Try to change the parameter Kp with the slider to gain a feeling for the proportional parts influence."
+        let descText = "This first example uses only the proportional part of the controller to compute the output, while the other two parameters are set to zero. As you can see, the car doesn't follow the line very precisely. Try to change the parameter Kp with the slider to gain a feeling for the proportional part's influence."
         descLabel = PaperText(type: .TextSection, text: descText)
         addChild(descLabel)
         
@@ -110,7 +110,7 @@ public class CarExampleScene: SKScene {
         
         sbKp.position.x = size.width/4
         
-        let text = "Adjust the parameter Kd to be around 0.4 to add the derivative part to the controllers calculations. This leads to a huge improvement. The cars steering is damped before the car crosses the line. This prevents the overshooting, which occured when only the proportional part was used. Try adjusting the values to gain an understanding of their influence."
+        let text = "Adjust the parameter Kd to be around 0.4 to add the derivative part to the controller's calculations. This leads to a huge improvement. The car's steering is damped before the car crosses the line. This prevents the overshooting which occured when only the proportional part was used. Try adjusting the values to gain an understanding for their influence."
         descLabel.setAttrText(text: text)
         
         navBtn.target = nextPage
